@@ -1,0 +1,148 @@
+.controlButton {
+    padding-left: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.playButton {
+    color: var(--playColor, grey);
+}
+
+.active {
+    color: #bb2d3b;
+}
+
+.inactive {
+    color: grey;
+}
+
+.audioList {
+    padding-left: 0;
+}
+
+.listItem {
+    list-style: none;
+    position: relative;
+    padding: 1rem;
+    background-color: #c1c1c1;
+    cursor: pointer;
+    border-bottom: 0.5px solid rgb(176, 162, 162);
+}
+
+.listItem h5 {
+    font-size: 1rem;
+    color: black
+}
+
+.listItem:hover {
+    background-color: rgb(164, 164, 164);
+    /* color: black !important;  */
+}
+
+.activeTrack {
+    background-color: black;
+}
+
+.progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color: #5D2A66;
+     */
+    background: linear-gradient(to right, #5D2A66, #BB2D3B);
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+}
+
+.songTitle {
+    text-align: left;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 30vh; /* 30% of the viewport height */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top of the div */
+    justify-content: flex-start; /* Aligns items to the left of the div */
+    padding: 10px;
+    position: relative; /* Required for the overlay */
+    overflow: hidden; /* Ensures the overlay covers the entire background */
+    margin-bottom: 2rem;
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+  }
+  
+  .plTitle {
+    color: white; 
+    margin: 0; 
+    z-index: 2; 
+    padding: 5px 10px;
+    position: relative; 
+       margin-top: auto;
+       margin-bottom: auto;
+
+  }
+  
+
+
+/* Heart */
+
+
+/* Parts are from twitter.com */    
+
+.heartContainer {
+    position: relative;
+}
+
+.heartAnimation {
+    z-index: 3;
+    position: absolute;
+    top: -26px;
+    left: -30px;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+    background-position: left;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.animate {
+    animation: heart-burst .8s steps(28) forwards;
+}
+
+@keyframes heart-burst {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
+}

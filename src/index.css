@@ -1,0 +1,11 @@
+
+:root {
+    --red:#dc3545;
+    --black:#000;
+    --dark-purple: #5D2A66;
+    --deep-pink: #D5006D;
+}
+
+button {
+    text-transform: uppercase;
+}
