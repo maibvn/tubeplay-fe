@@ -162,7 +162,7 @@ const AudioPlayerList = () => {
                         fontSize: "2em",
                       }}
                     />
-                    <span>{playlist.likes ? playlist.likes : 123} hearts</span>
+                    <span>{playlist.likes ? `${playlist.likes} hearts` : "Be the first to like this playlist! ❤️"}</span>
                   </div>
                   <div className="d-flex align-items-center mb-3">
                     <FontAwesomeIcon
